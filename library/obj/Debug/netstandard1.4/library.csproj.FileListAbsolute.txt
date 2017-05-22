@@ -1,0 +1,6 @@
+/Users/eric/Desktop/TotalSolutionEric/library/bin/Debug/netstandard1.4/library.deps.json
+/Users/eric/Desktop/TotalSolutionEric/library/bin/Debug/netstandard1.4/library.dll
+/Users/eric/Desktop/TotalSolutionEric/library/bin/Debug/netstandard1.4/library.pdb
+/Users/eric/Desktop/TotalSolutionEric/library/obj/Debug/netstandard1.4/library.AssemblyInfo.cs
+/Users/eric/Desktop/TotalSolutionEric/library/obj/Debug/netstandard1.4/library.dll
+/Users/eric/Desktop/TotalSolutionEric/library/obj/Debug/netstandard1.4/library.pdb

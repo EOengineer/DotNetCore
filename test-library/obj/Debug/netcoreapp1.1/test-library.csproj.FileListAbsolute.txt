@@ -1,0 +1,13 @@
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/xunit.runner.utility.netstandard15.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/xunit.runner.reporters.netstandard15.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/test-library.deps.json
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/test-library.runtimeconfig.json
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/test-library.runtimeconfig.dev.json
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/test-library.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/test-library.pdb
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/library.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/bin/Debug/netcoreapp1.1/library.pdb
+/Users/eric/Desktop/TotalSolutionEric/test-library/obj/Debug/netcoreapp1.1/test-library.AssemblyInfo.cs
+/Users/eric/Desktop/TotalSolutionEric/test-library/obj/Debug/netcoreapp1.1/test-library.dll
+/Users/eric/Desktop/TotalSolutionEric/test-library/obj/Debug/netcoreapp1.1/test-library.pdb

@@ -1,0 +1,10 @@
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/app.deps.json
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/app.runtimeconfig.json
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/app.runtimeconfig.dev.json
+/Users/eric/Desktop/TotalSolutionEric/app/obj/Debug/netcoreapp1.1/app.AssemblyInfo.cs
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/app.dll
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/app.pdb
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/library.dll
+/Users/eric/Desktop/TotalSolutionEric/app/bin/Debug/netcoreapp1.1/library.pdb
+/Users/eric/Desktop/TotalSolutionEric/app/obj/Debug/netcoreapp1.1/app.dll
+/Users/eric/Desktop/TotalSolutionEric/app/obj/Debug/netcoreapp1.1/app.pdb
