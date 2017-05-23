@@ -1,0 +1,9 @@
+/Users/eric/Desktop/TotalSolutionEric/webapp/bin/Debug/netcoreapp1.1/webapp.deps.json
+/Users/eric/Desktop/TotalSolutionEric/webapp/bin/Debug/netcoreapp1.1/webapp.runtimeconfig.json
+/Users/eric/Desktop/TotalSolutionEric/webapp/bin/Debug/netcoreapp1.1/webapp.runtimeconfig.dev.json
+/Users/eric/Desktop/TotalSolutionEric/webapp/bin/Debug/netcoreapp1.1/webapp.dll
+/Users/eric/Desktop/TotalSolutionEric/webapp/bin/Debug/netcoreapp1.1/webapp.pdb
+/Users/eric/Desktop/TotalSolutionEric/webapp/obj/Debug/netcoreapp1.1/webapp.AssemblyInfo.cs
+/Users/eric/Desktop/TotalSolutionEric/webapp/obj/Debug/netcoreapp1.1/webapp.dll
+/Users/eric/Desktop/TotalSolutionEric/webapp/obj/Debug/netcoreapp1.1/webapp.pdb
+/Users/eric/Desktop/TotalSolutionEric/webapp/obj/Debug/netcoreapp1.1/webapp.csprojResolveAssemblyReference.cache
