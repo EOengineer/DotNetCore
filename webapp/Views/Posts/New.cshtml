@@ -1,0 +1,33 @@
+<!-- added to support client side validation -->
+
+<form action="/Posts/Create" method="post">
+  <div class="form-horizontal">
+    <h4>New Post</h4>
+    <div class="text-danger"></div>
+    <div class="form-group">
+
+      <label class="col-md-2 control-label" for="Title">Title</label>
+      <div class="col-md-10">
+        <input class="form-control" type="string"
+        data-val="true" data-val-required="The Title field is required."
+        id="Title" name="Title" value="" />
+        <span class="text-danger field-validation-valid"
+        data-valmsg-for="Title" data-valmsg-replace="true"></span>
+      </div>
+
+      <label class="col-md-2 control-label" for="Body">Body</label>
+      <div class="col-md-10">
+        <input class="form-control" type="string"
+        data-val="true" data-val-required="The Body field is required."
+        id="Body" name="Body" value="" />
+        <span class="text-danger field-validation-valid"
+        data-valmsg-for="Body" data-valmsg-replace="true"></span>
+      </div>
+
+      <label class="col-md-2 control-label" for="Title"></label>
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary">
+      </div>
+    </div>
+  </div>
+</form>
