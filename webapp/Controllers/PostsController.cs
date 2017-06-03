@@ -25,10 +25,20 @@ namespace webapp.Controllers
 
 
         [HttpGet("{id:int}")]
-        public IActionResult Details(int? id)
+        public IActionResult Details(int id)
         {
-            //var post = postRepository.Details(id);
-            return View();
+            var post = postRepository.Details(id);
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            if (post == null)
+            {
+                return NotFound();
+            }
+            return View(post);
         }
 
 
@@ -46,7 +56,7 @@ namespace webapp.Controllers
 
             if (ModelState.IsValid)
             {
-                //postRepository.Create(post);
+                postRepository.Create(post);
                 return RedirectToAction("Index");
             }
             else

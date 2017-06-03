@@ -49,8 +49,8 @@ public class PostRepository
     {
         using (IDbConnection dbConnection = Connection)
         {
-            string query = "INSERT INTO Posts (title, body)"
-                            + " VALUES(@title, @body)";
+            string query = "INSERT INTO Posts (title, body, created_at, updated_at)"
+                            + " VALUES(@title, @body, GETDATE(), GETDATE())";
 
             dbConnection.Open();
             dbConnection.Execute(query, post);
