@@ -10,7 +10,7 @@ public class PostRepository
 
     public PostRepository()
     {
-        connectionString = @"Server=localhost;Database=TotalSolution;Trusted_Connection=true";
+        connectionString = @"Server=localhost;Database=TotalSolution;User Id=SA;Password=<YourStrong!Passw0rd>";
     }
 
     public IDbConnection Connection 
@@ -21,7 +21,31 @@ public class PostRepository
     }
 
 
-    public void Add(Post post)
+
+    public IEnumerable<Post> Index()
+    {
+        using (IDbConnection dbConnection = Connection)
+        {
+            dbConnection.Open();
+            return dbConnection.Query<Post>("SELECT * FROM Posts");
+        }
+    }
+
+
+    public Post Details(int id)
+    {
+        using (IDbConnection dbConnection = Connection)
+        {
+            string query = "SELECT * FROM Posts"
+                            + " WHERE id = @id";
+            dbConnection.Open();
+            return dbConnection.Query<Post>(query, new { id = id }).FirstOrDefault();
+        }
+    }
+
+
+
+    public void Create(Post post)
     {
         using (IDbConnection dbConnection = Connection)
         {
@@ -33,38 +57,6 @@ public class PostRepository
         }
     }
 
-    public IEnumerable<Post> GetAll()
-    {
-        using (IDbConnection dbConnection = Connection)
-        {
-            dbConnection.Open();
-            return dbConnection.Query<Post>("SELECT * FROM Posts");
-        }
-    }
-
-
-    public Post GetByID(int id)
-    {
-        using (IDbConnection dbConnection = Connection)
-        {
-            string query = "SELECT * FROM Posts"
-                            + " WHERE id = @id";
-            dbConnection.Open();
-            return dbConnection.Query<Post>(query, new { id = id }).FirstOrDefault();
-        }
-    }
-
-    public void Delete(int id)
-    {
-        using ( IDbConnection dbConnection = Connection)
-        {
-            string query = "DELETE FROM Posts"
-                            + " WHERE id = @id";
-                        
-            dbConnection.Open();
-            dbConnection.Execute(query, new { id = id });
-        }
-    }
 
     public void Update(Post post)
     {
@@ -78,4 +70,21 @@ public class PostRepository
             dbConnection.Query(query, post);
         }
     }
+
+
+
+    
+
+    public void Delete(int id)
+    {
+        using ( IDbConnection dbConnection = Connection)
+        {
+            string query = "DELETE FROM Posts"
+                            + " WHERE id = @id";
+                        
+            dbConnection.Open();
+            dbConnection.Execute(query, new { id = id });
+        }
+    }
+
 }
