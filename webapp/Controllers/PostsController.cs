@@ -67,14 +67,32 @@ namespace webapp.Controllers
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [FromForm]Post post)
+        [HttpGet("{id:int}/[action]")]
+        public IActionResult Edit(int id)
         {
-            post.id = id;
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Post post = postRepository.Details(id);
+
+            if (postRepository == null)
+            {
+                return NotFound();
+            }
+
+            return View(post);
+        }
+
+
+        [HttpPost("{id:int}/[action]"), ActionName("Edit")]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditPost(Post post)
+        {
             if (ModelState.IsValid)
             {
-                //postRepository.Update(post);
+                postRepository.Update(post);
                 return RedirectToAction("Index");
             }
             else

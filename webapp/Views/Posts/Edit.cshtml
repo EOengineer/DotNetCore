@@ -1,0 +1,29 @@
+@model Post
+
+<form asp-action="Edit">
+  <div class="form-horizontal">
+    <h4>New Post</h4>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+
+      <label class="col-md-2 control-label" asp-for="title">Title</label>
+      <div class="col-md-10">
+        <input class="form-control" type="string" asp-for="title"
+        id="title" name="title" value="@Model.title" />
+        <span asp-validation-for="title" class="text-danger"></span>
+      </div>
+
+      <label class="col-md-2 control-label" asp-for="body">Body</label>
+      <div class="col-md-10">
+        <input class="form-control" type="string" asp-for="body"
+        id="body" name="body" value="@Model.body" />
+        <span asp-validation-for="body" class="text-danger"></span>
+      </div>
+
+      <label class="col-md-2 control-label" for="Title"></label>
+      <div class="col-md-10">
+        <input type="submit" class="btn btn-primary">
+      </div>
+    </div>
+  </div>
+</form>

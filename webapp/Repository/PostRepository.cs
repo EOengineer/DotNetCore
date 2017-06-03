@@ -62,12 +62,14 @@ public class PostRepository
     {
         using ( IDbConnection dbConnection = Connection)
         {
-            string query = "UPDATE Posts SET title = @title,"
-                            + " body = @body"
+            string query = "UPDATE Posts SET"
+                            + " title = @title,"
+                            + " body = @body,"
+                            + " updated_at = GETDATE()"
                             + " WHERE id = @id";
 
             dbConnection.Open();
-            dbConnection.Query(query, post);
+            var bleh = dbConnection.Query(query, post);
         }
     }
 
